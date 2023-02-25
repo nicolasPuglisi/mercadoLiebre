@@ -1,0 +1,252 @@
+
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root {
+    --amarillo: #EAC926;
+	--azul: #03264C;
+    --celeste: #1259c3;
+    --grisoscuro: #666;
+    --grisclaro: #ebebeb;
+    --verde: #39b54a;
+}
+
+
+header {
+    background-color:var(--amarillo);
+    padding: 20px;
+}
+
+.barra-busqueda{
+    border: solid;
+    background-color: white;
+    font-size: 14px;
+    font-weight: lighter;
+    height: 24px;
+    margin:1px;
+    width: 30vh;
+    justify-content: center;
+}
+
+.burger{
+   background-color: var( --celeste);
+   display: block;
+   max-width: 50px;
+   padding: 15px ;
+   color: white;
+   margin: auto;
+   border-radius: 8px;
+   text-align: center;
+   font-size: 18px;
+}
+.logo{
+    width: 200px;
+}
+.copy-header{
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.main-navbar{
+    display: none;
+}
+.main-navbar ul{
+    list-style: none;
+
+}
+.main-navbar a{
+    text-decoration:none;
+    color:var(--azul);
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 16px;   
+}
+
+.publicidad-separador {
+    width: 100%;
+}
+main {
+    background: var(--grisclaro);
+    padding: 20px;
+}
+.main-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+main .main-title {
+    color: var(--grisoscuro);
+    font-size: 24px;
+}
+.precio {
+    font-size: 18px;
+}
+.descripcion {
+    font-size: 16px;
+}
+.main-title {
+    font-weight: 600;
+}
+
+.main-article {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 9px rgb(73, 73, 73);
+    border: 1px solid #ebebeb;
+    padding: 15px;
+    background: white;
+    margin-top: 10px;
+}
+article img {
+    margin-top: 9px;
+    max-width: 89vw;
+
+}
+.camionetita i{
+    border: 1px solid var(--verde);
+    border-radius: 50%;
+    color: var(--verde);
+    padding: 9px;
+    margin-left: 90%;
+}
+.precio-oferta{
+    display: flex;
+}
+.precio {
+    width: 30%;
+    margin-top: 10px;
+}
+.oferta {
+    width: 70%;
+    color: var(--verde);
+    margin-top: 10px;
+}
+.descripcion {
+    display: none;
+    margin-top: 20px;
+}
+
+/* ---- FOOTER ---- */
+footer {
+    text-align: center;
+    padding: 40px;
+    border: var(--grisclaro) 9px solid;
+}
+footer i {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: var(--celeste)
+}
+
+.footer-titulos {
+    font-weight: 800;
+    font-size: 18px;
+
+}
+footer section {
+    margin-bottom: 50px;
+    font-size: 12px;
+}
+
+@media (min-width: 576px) {
+    .descripcion {
+        display: flex;
+    }
+    .main-article {
+        box-shadow: 0px 0px 10px rgb(73, 73, 73);
+    }
+    .primer-nav {
+        display: flex;
+        flex-direction:column ;
+    }
+    .burger{
+        margin: auto;
+        display: flex;
+    }
+}
+
+.formulario{
+    padding: 20px 15px;
+}
+
+.control-formulario{
+    margin-bottom: 5px;
+}
+.control-formulario label{
+    margin-bottom: 5px;
+    font-style: italic;
+    display: block;
+}
+
+@media (min-width: 769px) {
+    .main-header{
+        display: flex;
+        justify-content: space-between;
+    }
+    .copy-header{
+        text-align: right;
+        font-size: 20px;
+        max-width: 350px;
+    }
+    .burger{
+        display: none;
+    }
+    .main-navbar{
+        display: flex;
+        justify-content: space-between;
+    }
+    .main-navbar ul{
+        display: flex;
+    }
+    .main-navbar li{
+        margin: 5px;
+    }
+    .main-article {
+        box-shadow: 0px 0px 10px rgb(73, 73, 73);
+        width: 45%;
+    }
+    .barra-busqueda{
+        display: none;
+    }
+}
+@media (min-width: 992px){
+    .main-article {
+        width: 20%;
+    }
+    .camionetita i{
+        margin-left: 80%;
+    }
+    .barra-busqueda{
+        display: none;
+    }
+}
+@media(min-width: 1200px){
+    .logo{
+        width: 310px;
+    }
+    .main-header, .main-navbar{
+        margin: auto;
+    }  
+    .main-header{
+        align-items: center;
+    }
+    .copy-header{
+        max-width: none;
+        font-weight: 400;
+        margin: 0;
+        font-size: 18px;
+    }
+    .main-navbar li{
+        margin: 10px;
+        margin-top: 40px;
+    }
+    .main-navbar a{
+        font-size: 18px;   
+    }
+    .barra-busqueda{
+        display: none;
+}
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <form action="resultado.html" method="POST" class = "formulario">
+    <div class = "control-formulario">
+    <label for = "nombre">nombre</label>
+      <input type="text" name = "nombre" id = "nombre">
+    </div>
+    <div class = "control-formulario">
+       <label for = "email">email</label>
+      <input type="email" name = "email" id = "email">
+    </div>
+    <div class = "control-formulario">
+      <label for = "password">contraseña</label>
+      <input type="password" name = "password" id = "password">
+    </div>
+    <div class = "control-formulario">
+      <label> categoria</label>
+      <select name = "categoria">
+      <option value="hogar">Hogar</option>
+      <option value="electronica">Electro</option>
+      <option value="indumentaria">Indumentaria</option>
+      <option value="comida">Comida</option>
+        </select>
+    </div>
+    <label for = "oferta">Esta en oferta</label>
+    <input type="radio" name = "oferta" id = "oferta">
+    <div>
+    <button type="submit"> 
+    <input type = "submit" value="ENVIAR">
+    </button>
+    </div>
+  </form>
+</body>
+</html>
